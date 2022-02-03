@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formulaire</title>
+    <style >
+
+        #container{
+            color: darkorchid;
+            margin: auto;
+        }
+        h3{
+            text-align: center;
+            color: deeppink;
+        }
+        form {
+            text-align: center;
+        }
+        label {
+            display:block;
+            margin:5px 0;
+        }
+
+        body{
+            background-color: #F5F5F5;
+        }
+
+        .ligne label{
+            display: inline-block;
+        }
+    </style>
+
+
+
+    <title>Marketplace</title>
+
+</head>
+
+<body>
+
+
+<div id="container">
+    <h3 >Inscription en liscence</h3>
+    <form action="formulaire.html" method="POST" id="form">
+
+        <p>
+            <label>Nom</label>
+            <input name="dname" placeholder="Ton nom" type="text" size="30" required autofocus />
+
+            <label>Prénoom</label>
+            <input placeholder="Ton prenom" type="text" size="30" required autofocus />
+
+            <label>Email</label>
+            <input  placeholder="Ton Email" type="email" size="30"  />
+
+            <label>Age</label>
+            <input  placeholder="20" type="text" size="30" />
+
+            <label>Votre Adresse</label>
+            <textarea placeholder="Votre adresse" rows="8" cols="30" ></textarea>
+
+            <label for="site">Votre site</label>
+            <input type="url" id="site"  size="30">
+
+            <label for="nais">Votre date de naissance</label>
+            <input type="date" id="nais"  size="30">
+
+            <label>mot de passe</label>
+            <input name="password" placeholder="Mot de passe" type="password" size="30" required />
+
+            <label>Retaper votre mot de passe</label>
+            <input name="password" placeholder="Mot de passe" type="password" size="30" required />
+            <br>
+        <label>Votre Groupe </label>
+        <div class="ligne">
+
+            <label for="radio_1">
+                <input type="radio" name="radio" id="radio_1" />
+                Groupe 1
+            </label>
+            <label for="radio_2">
+                <input type="radio" name="radio" id="radio_2" />
+                Groupe 2
+            </label>
+            <label for="radio_3">
+                <input type="radio" name="radio" id="radio_3" />
+                Groupe 3
+            </label>
+
+        </div>
+
+
+        <label>Numero Etudiant </label>
+        <input type="text" id="uname" name="name" required size="45"
+               pattern="[I][N][S][A][T][0-9]{4} ">
+        <br>
+
+        <label>Choisissez les options que vous désirez</label>
+        <SELECT NAME="ville" >
+            <OPTION VALUE="Android"> Android
+            <OPTION VALUE="Flutter"> Flutter
+            <OPTION VALUE="Html5"> Html5
+            <OPTION VALUE="Php"> PHP
+            <OPTION VALUE="JavaScript"> JavaScript
+        </SELECT>
+        <br />
+
+        <button type="submit" form="form" value="Submit">Submit</button>
+        <button type="reset" form="form" value="Reset">Reset</button>
+
+    </form>
+</div>
+
+
+
+</body>
+</html>
